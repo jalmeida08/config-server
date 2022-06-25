@@ -4,11 +4,11 @@ server:
 spring:
   application:
     name: config-server
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: 
-          - /home/stefanini/Documentos/pessoal/desenvolvimento/data-repo/
+        git:
+          uri: https://github.com/jalmeida08/data-repo
+        #native:
+         # search-locations: 
+          #- /home/stefanini/Documentos/pessoal/desenvolvimento/data-repo/
